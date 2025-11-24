@@ -11,7 +11,7 @@ import seaborn as sns
 col_names=['a','b','c']
 data=pd.DataFrame(np.random.randint(30,size=(30,3)),columns=col_names)
 
-'line graph:'
+'Line graph:'
 st.line_chart(data)
 
 'Bar graph:'
@@ -20,7 +20,7 @@ st.bar_chart(data)
 animals=['Cat','Dog','Cow']
 heights=[10,20,30]
 
-'pie chart:'
+'Pie chart:'
 fig, ax = plt.subplots()
 ax.pie(heights,labels=animals)
 
@@ -82,6 +82,7 @@ st.pyplot(fig2)
 fig3=plt.figure()
 sns.scatterplot(data=data) 
 st.pyplot(fig3)
+
 
 
 
