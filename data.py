@@ -50,6 +50,7 @@ fig,ax=plt.subplots()
 x=np.arange(len(heights))
 width=0.30
 
+
 ax.bar(x-width/2,width, color='red')
 ax.bar(x+width/2,heights,width,color='orange')
 
@@ -71,18 +72,20 @@ st.pyplot(plot_pie)
 iris_data = load_iris()
 data=pd.DataFrame(iris_data.data,columns=iris_data.feature_names)
 
+'Histplot using seaborn:'
 fig1=plt.figure()
 sns.histplot(data=data,bins=20)
 st.pyplot(fig1)
 
+'Boxplot using seaborn:'
 fig2=plt.figure()
 sns.boxplot(data=data)
 st.pyplot(fig2)
 
+'Scatterplot using seaborn:'
 fig3=plt.figure()
 sns.scatterplot(data=data) 
 st.pyplot(fig3)
-
 
 
 
